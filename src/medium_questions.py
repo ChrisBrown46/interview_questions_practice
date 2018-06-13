@@ -96,3 +96,20 @@ class Node:
 # -----------------------------------------------------------------------------
 def alien_language(words = None):
     return ""
+
+
+# -----------------------------------------------------------------------------
+# Exercise (Medium): Greatest Common Denominator
+#
+# Return the greatest common denominator between two integers.
+# The inputs may be negative values, but the return must not be negative.
+# Brush up on how to find GCDs if the following examples do not make sense.
+#
+# gcd(5, 15) = 5
+# gcd(0, 0) = 0
+# gcd(0, 1) = 1
+# gcd(-2, -2) = 2
+# gcd(-2, 2) = 1
+# -----------------------------------------------------------------------------
+def greatest_common_denominator(a=0, b=0):
+    return 0

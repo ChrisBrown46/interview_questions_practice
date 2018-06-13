@@ -3,6 +3,7 @@ import unittest
 from src.medium_questions import pound_pattern
 from src.medium_questions import reverse_second_half_linked_list, Node
 from src.medium_questions import alien_language
+from src.medium_questions import greatest_common_denominator
 
 
 class MediumQuestionsTests(unittest.TestCase):
@@ -93,6 +94,15 @@ class MediumQuestionsTests(unittest.TestCase):
         self.assertEqual('', alien_language(edge_case_2))
         self.assertEqual('', alien_language(edge_case_3))
 
+    def test_greatest_common_denominator(self):
+        self.assertEqual(0, greatest_common_denominator(0, 0))
+        self.assertEqual(1, greatest_common_denominator(0, 1))
+        self.assertEqual(5, greatest_common_denominator(5, 15))
+        self.assertEqual(2, greatest_common_denominator(-2, -2))
+        self.assertEqual(1, greatest_common_denominator(-2, 5))
+        self.assertEqual(21, greatest_common_denominator(958839, 593082))
+        self.assertEqual(3, greatest_common_denominator(
+            9859378098709875378, 598537109873209875))
 
 if __name__ == '__main__':
     unittest.main()
