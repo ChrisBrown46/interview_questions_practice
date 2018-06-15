@@ -24,3 +24,17 @@ def fibonacci(n = 0):
 # -----------------------------------------------------------------------------
 def is_palindrome(word = ""):
     return False
+
+
+# -----------------------------------------------------------------------------
+# Exercise (Easy): Bit Flip
+
+# Swap all even bits with odd bits in a number.
+
+# Ex) Input: 23 (0 0 0 1 0 1 1 1)   Output: 43 (0 0 1 0 1 0 1 1)
+# Explanation) The first two (1 1) bits swap, the next two (0 1) swap, then ...
+# -----------------------------------------------------------------------------
+def odd_even_bit_swap(n=0):
+    # base_10 number(int) to base_2 number(string): bin(n)
+    # base_2 number(string) to base_10 number(int): int(string, 2)
+    return 0

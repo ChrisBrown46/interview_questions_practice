@@ -2,6 +2,7 @@ import unittest
 
 from src.easy_questions import fibonacci
 from src.easy_questions import is_palindrome
+from src.easy_questions import odd_even_bit_swap
 
 
 class EasyQuestionsTests(unittest.TestCase):
@@ -45,6 +46,12 @@ class EasyQuestionsTests(unittest.TestCase):
         for not_palindrome in not_palindromes:
             self.assertFalse(is_palindrome(not_palindrome), 'True Negative')
 
+    def test_odd_even_bit_swap(self):
+        self.assertEqual(43, odd_even_bit_swap(23))
+        self.assertEqual(1, odd_even_bit_swap(2))
+        self.assertEqual(143, odd_even_bit_swap(79))
+        self.assertEqual(0, odd_even_bit_swap(0))
+        self.assertEqual(-5, odd_even_bit_swap(-10))
 
 if __name__ == '__main__':
     unittest.main()
